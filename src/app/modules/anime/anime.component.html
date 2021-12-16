@@ -1,6 +1,10 @@
+<div class="main_container">
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner" style="position: absolute; width: 80%; z-index: 1000;">
     <div *ngIf="numberOfSlides !== 0">
+      <div>
+      <h1 class="title"><b>TOP AIRING</b> AT THIS MOMENT</h1>
+      </div>
     <div class="carousel-item" *ngFor="let n of getNumberOfSlides(); let i = index">
     <div style="display: inline-flex;" *ngFor="let animeitem of getAnimeListForNthSlide(i)">
       <div style="display: inline-flex;">
@@ -21,6 +25,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
 </div>
 <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner" style="position: absolute;">

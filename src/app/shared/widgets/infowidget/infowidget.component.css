@@ -1,16 +1,28 @@
-p {
-    font-family: Lato;
+.card-container {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #222028;
+    margin-right: 30px;
+}
+    .item-dimensions {
+    width: 210px;
+    height: auto;
     }
-    .example-card {
-    max-width: 500px;
-    margin: 4px
+    .card-image {
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
     }
-    
-    mat-card-subtitle{
-    font-size:30px
-    }
-    
-    mat-card-title{
-    color:green;
-    font-size:40px
-    }
+  .title {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+  }

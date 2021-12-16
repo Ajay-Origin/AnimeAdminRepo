@@ -1,0 +1,13 @@
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    margin: 0;
+    padding-right: 70px;
+}
+.main_container {
+    padding: auto;
+    align-items: center;
+}
