@@ -1,10 +1,14 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner" style="position: absolute; width: 80%; z-index: 1000;">
-    <div class="carousel-item" *ngFor="let animeitem of allTimeAiringanimeList; let i = index">
+    <div *ngIf="numberOfSlides !== 0">
+    <div class="carousel-item" *ngFor="let n of getNumberOfSlides(); let i = index">
+    <div style="display: inline-flex;" *ngFor="let animeitem of getAnimeListForNthSlide(i)">
       <div style="display: inline-flex;">
       <app-infowidget [anime]="animeitem"></app-infowidget>
       </div>
     </div>
+    </div>
+  </div>
     <div class="carousel-item active">
       <img src="/assets/img-01.jpg" class="d-block w-100" alt="...">
     </div>
