@@ -8,6 +8,16 @@
     padding-right: 70px;
 }
 .main_container {
-    padding: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     align-items: center;
+}
+.outer-stage-item {
+    opacity: 0.3;
+}
+.outer-stage {
+    background: #1a191f
 }
