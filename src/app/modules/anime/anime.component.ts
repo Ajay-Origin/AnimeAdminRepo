@@ -21,7 +21,7 @@ export class AnimeComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    var myCarousel = document.querySelector('#carouselExampleControls');
+    var myCarousel = document.querySelector('#carousalTopAiring');
     const bootstrap = require('bootstrap');
     this.carousal = new bootstrap.Carousel(myCarousel, {
       interval: false,

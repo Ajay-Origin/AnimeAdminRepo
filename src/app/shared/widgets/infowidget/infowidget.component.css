@@ -9,6 +9,8 @@
     overflow: hidden;
     background-color: #222028;
     margin-right: 30px;
+    height: 300px;
+    cursor: pointer;
 }
     .item-dimensions {
     width: 210px;
@@ -19,9 +21,14 @@
     max-width: 100%;
     object-fit: cover;
     opacity: 0.9;
+    height: 300px;
     }
+  .detail {
+    margin-top: 10px;
+  }
   .title {
-    width: 100px;
+    width: 200px;
+    font-size: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

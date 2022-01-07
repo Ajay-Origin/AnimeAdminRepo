@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AnimeComponent } from './anime.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule,
     RouterModule,
     BrowserModule,
+    MatIconModule,
   ]
 })
 export class AnimeModule { }

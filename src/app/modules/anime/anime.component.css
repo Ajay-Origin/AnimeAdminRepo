@@ -8,16 +8,17 @@
     padding-right: 70px;
 }
 .main_container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding: 0px 150px;
+  width: 1550px;
+}
+.nav-div {
+    display: inline-flex;
     align-items: center;
 }
-.outer-stage-item {
-    opacity: 0.3;
+.carousal-nav-buttons {
+    background: none;
+    border: none;
 }
-.outer-stage {
-    background: #1a191f
+.white-icon {
+    color: #fff;
 }
