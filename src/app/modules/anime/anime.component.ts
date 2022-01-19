@@ -34,7 +34,7 @@ export class AnimeComponent implements OnInit {
   this.numberOfSlides = this.allTimeAiringanimeList.length % this.animeItemsPerSlide === 0 ? this.allTimeAiringanimeList.length / this.animeItemsPerSlide : Math.floor(this.allTimeAiringanimeList.length / this.animeItemsPerSlide) + 1;
   }
   private loadAllTimeAiringAnime() {
-    return this.animeApiService.getEmployees().subscribe((data: any) => {
+    return this.animeApiService.getTopAllTimeAiring().subscribe((data: any) => {
       this.allTimeAiringanimeList = data.top as Anime[];
     });
   }

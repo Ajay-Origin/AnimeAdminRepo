@@ -20,10 +20,17 @@ export class AnimeService {
     }
 
   // HttpClient API get() method => Fetch all time airing anime
-  getEmployees(): Observable<Anime> {
+  getTopAllTimeAiring(): Observable<Anime> {
     return this.http.get<Anime>(this.apibaseURL + 'top/anime/1/airing')
     .pipe(
       retry(1)
     )
   }
+    // HttpClient API get() method => Fetch all time airing anime
+    getTopUpcoming(): Observable<Anime> {
+      return this.http.get<Anime>(this.apibaseURL + 'top/anime/1/upcoming')
+      .pipe(
+        retry(1)
+      )
+    }
 }

@@ -9,6 +9,7 @@ import { InfowidgetComponent } from 'src/app/shared/widgets/infowidget/infowidge
 import { MatCardModule} from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { CatagoriesComponent } from './components/catagories/catagories.component';
 
 
 
@@ -17,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     FooterComponent,
     InfowidgetComponent,
+    CatagoriesComponent,
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     FooterComponent,
     InfowidgetComponent,
+    CatagoriesComponent,
   ]
 })
 export class SharedModule { }
